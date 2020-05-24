@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_centerVertical="true"
+    android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <Button
+            android:id="@+id/b1"
+            android:background="@drawable/cal_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="showDatePickerDialog"
+            android:text="Pick up Dates+" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/b1"
+            android:text=""
+            android:textSize="30sp"
+            android:textColor="#FFF"
+            android:id="@+id/tv"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Type recipient's Email" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email"
+            android:layout_centerHorizontal="true"
+            android:padding="20dp"
+            android:background="@drawable/cal_style"
+            android:onClick="sendDates"
+            android:text="Send your choice" />
+    </RelativeLayout>
